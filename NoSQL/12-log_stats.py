@@ -28,4 +28,5 @@ def main():
     log_stats(nginx_collection)
 
 
-main()
+if __name__ == "__main__":
+    main()
