@@ -22,6 +22,10 @@ def log_stats(mongo_collection):
     print(f"{status_check} status check")
 
 
-if __name__ == "__main__":
+def main():
+    """Entry point for log statistics output."""
     nginx_collection = MongoClient('mongodb://127.0.0.1:27017').logs.nginx
     log_stats(nginx_collection)
+
+
+main()
